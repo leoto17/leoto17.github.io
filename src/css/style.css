@@ -1,0 +1,166 @@
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+	opacity: 1;
+}
+
+.slick-arrow, .slick-dots {
+	display: none !important;
+}
+
+.ball {
+	text-align: center;
+	width: 100%;
+}
+.vertical-center.slider {
+	border-radius: 55px;
+    max-width: 229px;
+    max-height: 325px;
+    margin: 0px;
+    position: absolute;
+    top: calc(50% - 161.5px);
+	left: 30px;
+    background-color: #fff8cd;
+    border: 7px dotted #ffa446;
+	z-index: -1;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #909090;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+div#board {
+	position: absolute;
+    top: 0px;
+    right: 20px;
+	z-index: -1;
+}
+
+.line {
+	margin-top: 30px;
+}
+
+.item {
+	display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+	transition: background-color 2s ease;
+    background-color: #b1aeae;
+    border-radius: 11px;
+    margin-left: 8px;
+    color: #949494;
+    font-size: 35px;
+    padding-top: 10px;
+    border: 1px solid #ffa446;
+}
+
+.popupBase {
+	display: none;
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+div#generated {
+    padding: 1%;
+	height: 204px;
+    border-radius: 25px;
+    position: relative;
+    left: 29.5%;
+    top: calc(50% - 102px);
+    background-color: white;
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+    z-index: 2;
+	border: 4px dotted #5275d2;
+}
+
+span.bigSpan {
+    font-size: 55px;
+}
+
+.closeButton {
+	float: right;
+	cursor: pointer;
+}
+
+div.button{
+	background-color: #5275d2;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+div#letters {
+	position: absolute;
+    top: 30px;
+    right: 972px;
+    z-index: -1;
+    display: inline-grid;
+	margin-right: 10px;
+}
+
+img.letter {
+	margin: auto;
+}
+
+img#letterI.letter {
+    margin-top: 27px;
+}
+
+img#letterN.letter {
+    margin-top: 28px;
+}
+
+img#letterG.letter {
+    margin-top: 24px;
+}
+
+img#letterO.letter {
+    margin-top: 24px;
+}
+
+img#titleBingo {
+	position: absolute;
+    bottom: 20px;
+	left: calc(50% - 321.5px);
+}
+
+img#realoadIcon {
+	cursor: pointer;
+}
+
+img#helpIcon {
+	cursor: pointer;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+div#popup3 span {
+    font-size: 23px;
+}
+
+div#popup3 span.bigSpan {
+    font-size: 38px;
+}

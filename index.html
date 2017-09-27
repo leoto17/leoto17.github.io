@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>LEOTO'S BINGO 2.0</title>
+	  <meta charset="UTF-8">
+	  <link rel="icon" href="src/img/favIcon.png">
+	  <link rel="stylesheet" type="text/css" href="src/css/slick.css">
+	  <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css">
+	  <link rel="stylesheet" type="text/css" href="src/css/style.css">
+	  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="popupBase" id="popup1">
+			<div id="generated">
+				<img onclick="closeModal(1);" class="closeButton" src="src/img/closeButtonIcon.png">
+				<span class="bigSpan">Excelente!!</span>
+				<br>
+				<span>El sorteo de las 75 balotas ha culminado satisfactoriamente</span>
+				<br>
+				<span>La SUERTE está hechada, a jugar!!</span>
+			</div>
+		</div>
+		<div class="popupBase" id="popup2">
+			<div id="generated">
+				<img onclick="closeModal(2);" class="closeButton" src="src/img/closeButtonIcon.png">
+				<span class="bigSpan">UPPS!!</span>
+				<br>
+				<span>Lo sentimos ya han sido obtenidas todas las balotas</span>
+				<div class="button" onclick="restart();">REINICIAR JUEGO</div>
+			</div>
+		</div>
+		<div class="popupBase" id="popup3">
+			<div id="generated">
+				<img onclick="closeModal(3);" class="closeButton" src="src/img/closeButtonIcon.png">
+				<span class="bigSpan">INSTRUCCIONES</span>
+				<br>
+				<span>Presione ESPACIO para generar el siguiente número</span>
+				<br>
+				<span>Presione R para repetir el último número</span>
+				<br>
+				<span>Para reiniciar el juego simplemente recargue la página</span>
+			</div>
+		</div>
+		<img id="realoadIcon" title="Reiniciar Juego" onclick="restart();" src="src/img/reloadIcon.png">
+		<img id="helpIcon" title="Instrucciones" onclick="openInstructions();" src="src/img/helpIcon.png">
+		<section class="vertical-center slider">
+			<div class="ball">
+				<img src="src/img/0.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/1.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/2.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/3.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/4.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/5.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/6.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/7.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/8.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/9.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/10.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/11.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/12.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/13.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/14.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/15.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/16.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/17.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/18.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/19.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/20.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/21.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/22.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/23.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/24.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/25.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/26.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/27.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/28.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/29.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/30.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/31.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/32.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/33.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/34.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/35.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/36.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/37.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/38.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/39.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/40.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/41.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/42.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/43.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/44.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/45.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/46.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/47.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/48.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/49.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/50.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/51.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/52.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/53.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/54.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/55.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/56.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/57.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/58.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/59.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/60.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/61.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/62.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/63.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/64.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/65.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/66.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/67.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/68.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/69.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/70.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/71.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/72.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/73.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/74.png">
+			</div>
+			<div class="ball">
+				<img src="src/img/75.png">
+			</div>
+		</section>
+		<div>
+			<div id="letters">
+				<img class="letter" id="letterB" src="src/img/B.png">
+				<img class="letter" id="letterI" src="src/img/I.png">
+				<img class="letter" id="letterN" src="src/img/N.png">
+				<img class="letter" id="letterG" src="src/img/G.png">
+				<img class="letter" id="letterO" src="src/img/O.png">
+			</div>
+			<div id="board">
+				<div class="line" id="lineB">
+					<div class="item" id="1">1</div>
+					<div class="item" id="2">2</div>
+					<div class="item" id="3">3</div>
+					<div class="item" id="4">4</div>
+					<div class="item" id="5">5</div>
+					<div class="item" id="6">6</div>
+					<div class="item" id="7">7</div>
+					<div class="item" id="8">8</div>
+					<div class="item" id="9">9</div>
+					<div class="item" id="10">10</div>
+					<div class="item" id="11">11</div>
+					<div class="item" id="12">12</div>
+					<div class="item" id="13">13</div>
+					<div class="item" id="14">14</div>
+					<div class="item" id="15">15</div>
+				</div>
+				<div class="line" id="lineI">
+					<div class="item" id="16">16</div>
+					<div class="item" id="17">17</div>
+					<div class="item" id="18">18</div>
+					<div class="item" id="19">19</div>
+					<div class="item" id="20">20</div>
+					<div class="item" id="21">21</div>
+					<div class="item" id="22">22</div>
+					<div class="item" id="23">23</div>
+					<div class="item" id="24">24</div>
+					<div class="item" id="25">25</div>
+					<div class="item" id="26">26</div>
+					<div class="item" id="27">27</div>
+					<div class="item" id="28">28</div>
+					<div class="item" id="29">29</div>
+					<div class="item" id="30">30</div>
+				</div>
+				<div class="line" id="lineN">
+					<div class="item" id="31">31</div>
+					<div class="item" id="32">32</div>
+					<div class="item" id="33">33</div>
+					<div class="item" id="34">34</div>
+					<div class="item" id="35">35</div>
+					<div class="item" id="36">36</div>
+					<div class="item" id="37">37</div>
+					<div class="item" id="38">38</div>
+					<div class="item" id="39">39</div>
+					<div class="item" id="40">40</div>
+					<div class="item" id="41">41</div>
+					<div class="item" id="42">42</div>
+					<div class="item" id="43">43</div>
+					<div class="item" id="44">44</div>
+					<div class="item" id="45">45</div>
+				</div>
+				<div class="line" id="lineG">
+					<div class="item" id="46">46</div>
+					<div class="item" id="47">47</div>
+					<div class="item" id="48">48</div>
+					<div class="item" id="49">49</div>
+					<div class="item" id="50">50</div>
+					<div class="item" id="51">51</div>
+					<div class="item" id="52">52</div>
+					<div class="item" id="53">53</div>
+					<div class="item" id="54">54</div>
+					<div class="item" id="55">55</div>
+					<div class="item" id="56">56</div>
+					<div class="item" id="57">57</div>
+					<div class="item" id="58">58</div>
+					<div class="item" id="59">59</div>
+					<div class="item" id="60">60</div>
+				</div>
+				<div class="line" id="lineO">
+					<div class="item" id="61">61</div>
+					<div class="item" id="62">62</div>
+					<div class="item" id="63">63</div>
+					<div class="item" id="64">64</div>
+					<div class="item" id="65">65</div>
+					<div class="item" id="66">66</div>
+					<div class="item" id="67">67</div>
+					<div class="item" id="68">68</div>
+					<div class="item" id="69">69</div>
+					<div class="item" id="70">70</div>
+					<div class="item" id="71">71</div>
+					<div class="item" id="72">72</div>
+					<div class="item" id="73">73</div>
+					<div class="item" id="74">74</div>
+					<div class="item" id="75">75</div>
+				</div>
+			</div>
+		</div>
+		<img id="titleBingo" src="src/img/LEOTOS_BINGO_2.0.png">
+		<script src="src/js/jQueryv2.0.0.js" type="text/javascript"></script>
+		<script src="src/js/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/js/app.js" type="text/javascript"></script>
+	</body>
+</html>
